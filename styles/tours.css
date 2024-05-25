@@ -1,0 +1,80 @@
+/* Borders and backgrounds */
+body {
+    border: 2px solid #000;
+    background: linear-gradient(to bottom, #ffffff, #f2f2f2);
+}
+
+/* Floating */
+section {
+    float: left;
+    width: 60%;
+    margin-right: 2%;
+}
+
+aside {
+    float: left;
+    width: 30%;
+}
+
+/* Various heading levels and fonts */
+h1, h2, h3 {
+    font-family: 'Miama', sans-serif;
+    font-weight: bold;
+}
+
+/* 2-column layout with right sidebar */
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Text with floated image in section */
+article {
+    overflow: hidden; /* Clear floats */
+}
+
+article img {
+    float: right;
+    margin-left: 20px;
+}
+
+/* Horizontal navigation menu */
+nav#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav#nav_menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Gradient in header and footer */
+header {
+    background: linear-gradient(to bottom, #4d90fe, #0052cc);
+}
+
+footer {
+    background: linear-gradient(to bottom, #0052cc, #4d90fe);
+    color: #fff;
+    text-align: center;
+}
+
+/* Character entity in footer */
+footer p::after {
+    content: '\00A9';
+}
+
+/* Flexbox for scrolling */
+main {
+    overflow-y: scroll;
+    flex-direction: column;
+}
+
+/* Banner image */
+header {
+    background-image: url('images/tatooine_dew_banner.jpg');
+    background-size: cover;
+    background-position: center;
+}

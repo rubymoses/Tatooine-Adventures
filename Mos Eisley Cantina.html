@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mos Eisley Cantina</title>
+	<link rel="stylesheet" href="styles/city.css">
+	<link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="//use.edgefonts.net/miama.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
+    <script>
+        function playMusic() {
+            document.getElementById('cantina-audio').play();
+        }
+    </script>
+</head>
+<body>
+	<header>
+		<h2>Mos Eisley Cantina</h2>
+		<h3>A Hive of Scum and Villainy</h3>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+    	<ul>
+    		<li><a href="index.html">Home</a></li>
+    		<li><a href="brochure.html">Get Brochure</a></li>
+    		<li><a href="offers.html">Special Offers</a></li>
+    		<li><a href="join.html">Join Email List</a></li>
+    		<li class="lastitem"><a href="contact.html">Contact Us</a></li>
+    	</ul>
+    </nav>
+    <main>
+		<section>
+			<h1>Welcome to Mos Eisley Cantina</h1>
+			<article>
+				<figure>
+					<img src="images/Mos_Eisley_Cantina.jpg" alt="Mos Eisley Cantina" class="cantina-image">
+					<figcaption>The famous Mos Eisley Cantina</figcaption>				
+				</figure>
+				<p>Experience the excitement and adventure in the most wretched hive of scum and villainy!</p>
+				<button onclick="playMusic()">Play Cantina Band Music</button>
+				<audio id="cantina-audio" src="audio/StarWars_CantinaSong.mp3"></audio>
+			</article>		
+		</section>
+		<aside>
+			<h2>Must-See Spots:</h2>
+			<ul>
+				<li><a href="cantina.html"><img src="images/catina players.png" alt="Cantina" width="50"></a><a class="site" href="cantina.html">Cantina</a></li>
+				<li><a href="market.html"><img src="images/market_tatooine.jpg" alt="Market" width="50"></a><a class="site" href="market.html">Market</a></li>
+				<li><a href="hangar.html"><img src="images/tatooine_hanger.jpg" alt="Hangar" width="50"></a><a class="site" href="hangar.html">Hangar</a></li>
+				<li><a href="docks.html"><img src="images/tatooine_docks.jpg" alt="Docks" width="50"></a><a class="site" href="docks.html">Docks</a></li>
+			</ul>		
+		</aside>
+	</main>
+	<footer>
+		<p>&copy; 2024 Mos Eisley Cantina. All rights reserved.</p>
+	</footer>
+</body>
+</html>

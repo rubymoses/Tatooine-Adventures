@@ -1,0 +1,145 @@
+/* Add your custom styles here */
+
+body {
+    font-family: 'Miama', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    color: #FFD700; /* Gold lettering */
+}
+
+header {
+    background-image: url('images/tatooine_banner.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: #333;
+    color: #FFD700; /* Gold lettering */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #FFD700; /* Gold lettering */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+aside {
+    flex: 1;
+    max-width: 300px;
+    margin: 0 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+aside nav ul {
+    margin-top: 0;
+}
+
+aside nav ul li {
+    margin-bottom: 10px; /* Increased margin for better alignment */
+}
+
+aside nav ul li a {
+    color: #007bff;
+    font-size: 14px; /* Decrease font size for nav links */
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Align items vertically */
+}
+
+aside nav ul li a:hover {
+    text-decoration: underline;
+}
+
+aside nav ul li img {
+    margin-right: 10px; /* Add margin between image and text */
+    border-radius: 5px;
+    width: 30px; /* Reduce image size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+section {
+    flex: 2;
+    max-width: 600px;
+    margin: 0 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+section p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+footer {
+    background: linear-gradient(to right, #4e4e4e, #292929);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside,
+    section {
+        max-width: 100%;
+        margin: 0 0 20px 0;
+    }
+}

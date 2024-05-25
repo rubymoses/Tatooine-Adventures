@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mos Eisley Cantina</title>
+    <link rel="stylesheet" href="styles/city.css">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="//use.edgefonts.net/miama.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+
+        function playMusic() {
+            var audio = document.getElementById("cantina-audio");
+            audio.play();
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h2>Mos Eisley Cantina</h2>
+        <h3>A Hive of Scum and Villainy</h3>
+        <button onclick="playMusic()">Play Cantina Band Music</button>
+        <audio id="cantina-audio" src="audio/StarWars_CantinaSong.mp3"></audio>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cantina.html">Cantina</a></li>
+            <li><a href="market.html">Market</a></li>
+            <li><a href="hangar.html">Hangar</a></li>
+            <li class="lastitem"><a href="docks.html">Docks</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1>Inside the Cantina</h1>
+            <article>
+                <figure>
+                    <img src="images/Mos_Eisley_Cantina.jpg" alt="Inside Mos Eisley Cantina" class="cantina-image">
+                    <figcaption>The vibrant atmosphere inside the Cantina</figcaption>               
+                </figure>
+                <p>Welcome to the bustling heart of Mos Eisley where adventurers from across the galaxy gather. Enjoy live music from the famous Cantina Band and immerse yourself in the lively atmosphere.</p>
+                <img src="images/jabbasgentlemans.jpg" alt="Inside Mos Eisley Cantina" class="cantina-image">
+                
+            </article>       
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Suzanne French Tatooine Adventures. All rights reserved.</p>
+    </footer>
+</body>
+</html>

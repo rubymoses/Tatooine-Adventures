@@ -1,0 +1,137 @@
+body {
+    background: #000 url('images/stars_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Changed from height: 100vh; */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #FFD700;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.8);
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #FFA500;
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.6);
+}
+
+nav {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+main {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    max-width: 800px;
+    margin: 20px auto;
+    flex-grow: 1; /* Added to ensure main grows to fill available space */
+}
+
+h1 {
+    font-size: 3em;
+    color: #FFD700;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.8);
+}
+
+.cantina-image {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #FFD700;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #FFD700;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #FFA500;
+}
+
+aside {
+    margin-top: 20px;
+}
+
+aside h2 {
+    font-size: 1.8em;
+    color: #FFD700;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.8);
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+aside ul li img {
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+aside ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    color: #fff;
+    position: relative; /* Changed from absolute to relative */
+    bottom: 0;
+    left: 0;
+}

@@ -1,0 +1,102 @@
+/* sand_skiing.css */
+
+/* General styles */
+body {
+    font-family: 'Miama', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6e3; /* Light yellow background */
+}
+
+header, footer {
+    background-color: #073642; /* Dark teal */
+    color: #fff; /* White text */
+    padding: 20px;
+}
+
+header h2, footer p {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #073642; /* Dark teal */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #268bd2; /* Blue */
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+section, aside {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #073642; /* Dark teal */
+}
+
+article {
+    margin-top: 20px;
+}
+
+article p {
+    line-height: 1.5;
+}
+
+figcaption {
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Aside styles */
+aside h2 {
+    color: #073642; /* Dark teal */
+}
+
+aside ul {
+    padding-left: 0;
+}
+
+aside li {
+    margin-bottom: 10px;
+}
+
+aside a {
+    color: #073642; /* Dark teal */
+}
+
+aside a:hover {
+    color: #268bd2; /* Blue */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+}
